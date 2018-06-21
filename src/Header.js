@@ -13,6 +13,7 @@ class Header extends Component {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-between',
+               
               },
           
 
@@ -28,9 +29,6 @@ class Header extends Component {
             }
 
         }
-
-
-      
 
         return (
             <div className="header" style={styles.header}>
