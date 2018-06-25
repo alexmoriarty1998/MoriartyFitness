@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Route, Switch, NavLink } from 'react-router-dom'
 
 import Header from './Header'
+import './App.css'
 
 
 
@@ -12,13 +13,24 @@ class App extends Component {
       <div className="App">
       <Header />
       <div>
-        <ul>
+        <ul className="navLinks">
           <li>
-            <NavLink to="/test"> testLink </NavLink>
+            <NavLink 
+              to="/nutrition">
+             Nutrition 
+            </NavLink>
           </li>
+          <li>
+            <NavLink
+            to="/splits">
+            Splits
+            </NavLink>
+          </li>
+
         </ul>
         <Switch>
-          <Route path="/test" render={() => <h1> TEST </h1>}/>
+          <Route path="/nutrition" render={() => <h1> Nutrition </h1>}/>
+          <Route path="/splits" render={() => <h1> Splits </h1>}/>
           <Route render={() => <p> to get started click above </p>} />
         </Switch>
       </div>

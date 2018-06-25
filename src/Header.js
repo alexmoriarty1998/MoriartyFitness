@@ -6,7 +6,7 @@ class Header extends Component {
         const styles = {
 
             header: {
-                backgroundColor: '#f3f3f3',
+                backgroundColor: '#ffd69b',
                 borderBottom: '1px solid #ccc',
                 height: '6rem',
                 padding: '0 1rem',
