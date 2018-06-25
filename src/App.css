@@ -24,3 +24,9 @@
 .navLinks a:hover {
   color: #0184be;
 }
+
+.nutritionLinks {
+  text-align: left;
+  color: #0184be;
+  font-size: 15px;
+}

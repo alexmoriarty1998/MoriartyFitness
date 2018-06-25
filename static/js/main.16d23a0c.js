@@ -10,6 +10,7 @@ import Splits from './Splits.js'
 
 class App extends Component {
   render() {
+    const baseUrl = process.env.PUBLIC_URL
    
     return (
       <div className="App">
@@ -17,9 +18,8 @@ class App extends Component {
       <div>
         <ul className="navLinks">
           <li>
-            <NavLink
-            to='/nutrition'>
-
+            <NavLink 
+              to="/nutrition">
              Nutrition 
             </NavLink>
           </li>
@@ -32,8 +32,8 @@ class App extends Component {
 
         </ul>
         <Switch>
-          <Route path="/nutrition" render={() => <Nutrition />}/>
-          <Route path="/splits" render={() => <Splits />}/>
+          <Route path={baseUrl + "/nutrition"} render={() => <Nutrition />}/>
+          <Route path={baseUrl + "/splits"} render={() => <Splits />}/>
           <Route render={() => <p> to get started click above </p>} />
         </Switch>
       </div>

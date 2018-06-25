@@ -20,7 +20,6 @@ class Header extends Component {
             headerpictures: {
                 height: '5rem',
                 width: '5rem',
-                
             },
 
             alex: {
