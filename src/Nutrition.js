@@ -10,7 +10,7 @@ class Nutrition extends Component{
         }
         return(
             <div className="nutrition" style={styles.nutrition}>
-            <h1>Nutrition</h1>
+            <a href={'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3529694/'} target='_blank'>Protein Timing</a>
             </div>
         )
     }
