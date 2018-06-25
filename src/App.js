@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { Route, Switch, NavLink } from 'react-router-dom'
 
-import Header from './Header'
 import './App.css'
+import Header from './Header.js'
+import Nutrition from './Nutrition.js'
 
 
 
@@ -29,7 +30,7 @@ class App extends Component {
 
         </ul>
         <Switch>
-          <Route path="/nutrition" render={() => <h1> Nutrition </h1>}/>
+          <Route path="/nutrition" render={() => <Nutrition />}/>
           <Route path="/splits" render={() => <h1> Splits </h1>}/>
           <Route render={() => <p> to get started click above </p>} />
         </Switch>
