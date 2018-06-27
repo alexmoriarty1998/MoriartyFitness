@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { StyleSheet, css} from 'aphrodite'
 
-class MyStats extends Component{
+class MyStatsForm extends Component{
     
   state = {
     body: '',
@@ -70,5 +70,4 @@ const styles = StyleSheet.create({
 
 })
 
-
-export default MyStats
+export default MyStatsForm

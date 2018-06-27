@@ -5,7 +5,7 @@ import './App.css'
 import Header from './Header.js'
 import Nutrition from './Nutrition.js'
 import Splits from './Splits.js'
-import MyStats from './MyStats.js'
+import MyStatsPage from './MyStatsPage.js'
 
 
 
@@ -32,7 +32,7 @@ class App extends Component {
           </li>
           <li>
             <NavLink
-            to="/mystats">
+            to="/mystatspage">
             MyStats
             </NavLink>
           </li>
@@ -40,8 +40,8 @@ class App extends Component {
         <Switch>
           <Route path="/nutrition" render={() => <Nutrition />}/>
           <Route path="/splits" render={() => <Splits />}/>
-          <Route path="/mystats" render={()=> <MyStats />}/>
-          <Route render={() => <p> to get started click above </p>} />
+          <Route path="/mystatspage" render={()=> <MyStatsPage />}/>
+          <Route render={() => <p> To get started, click one of the links above. </p>} />
         </Switch>
       </div>
       </div>
