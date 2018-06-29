@@ -2,7 +2,7 @@
   "name": "alexmoriartyproject",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alexmoriarty1998.github.io/random/",
+  "homepage": "https://alexmoriarty1998.github.io/MoriartyFitness/",
   "dependencies": {
     "aphrodite": "^2.2.2",
     "react": "^16.4.1",
