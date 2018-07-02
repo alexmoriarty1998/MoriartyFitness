@@ -1,0 +1,36 @@
+.mainContainer{
+    display:flex;
+    border:1px solid rgb(135,135,135);
+    height:100vh;
+}
+
+.body{
+    flex-direction: column;
+    color: black;
+    background-color: cornflowerblue;
+    flex: 12 1 85%;
+    text-align: center;
+}
+
+#lifterIcon{
+    height: 80%;
+    margin: auto;
+}
+
+.header{
+    display: flex;
+    color: #191a19;
+    background-color: #ffd69b;
+    text-shadow:4px 4px 0 rgba(0,0,0,0.1);
+    text-align: center;
+    height: 10rem;
+    justify-content: 'space-between';
+    align-items: 'center';
+}
+
+.sidebar{
+    color: whitesmoke;
+    background-color:#1c110e;
+    flex: 1 12 15%;
+    border: 1px solid rgb(135, 135, 135);
+}
