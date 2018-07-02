@@ -7,7 +7,7 @@
 .body{
     flex-direction: column;
     color: black;
-    background-color: cornflowerblue;
+    background-color: rgb(238, 233, 233);
     flex: 12 1 85%;
     text-align: center;
 }
@@ -20,7 +20,7 @@
 .header{
     display: flex;
     color: #191a19;
-    background-color: #ffd69b;
+    background-color:#ffd69b;
     text-shadow:4px 4px 0 rgba(0,0,0,0.1);
     text-align: center;
     height: 10rem;
@@ -30,6 +30,7 @@
 
 .sidebar{
     color: whitesmoke;
+    text-shadow:4px 4px 0 rgba(142, 136, 136, 0.2);
     background-color:#1c110e;
     flex: 1 12 15%;
     border: 1px solid rgb(135, 135, 135);

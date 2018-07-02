@@ -1,0 +1,33 @@
+.navLinks li {
+    display: inline-block;
+    padding: 0 15px;
+  }
+  
+  .navLinks a {
+    color: #1c110e;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  .navLinks a.active {
+    color: #F79824;
+  }
+  
+  .navLinks a.active:hover {
+    color: #FDCA40;
+  }
+  
+  .navLinks a:hover {
+    color: #1c110e;
+  }
+  
+  .nutritionLinks {
+    text-align: left;
+    color: #1c110e;
+    font-size: 15px;
+  }
+
+  .navLinks{
+      color: #1c110e;
+  }
+
