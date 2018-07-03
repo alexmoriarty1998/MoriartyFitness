@@ -6,7 +6,7 @@ class Sidebar extends Component {
   render() {
     return (
      <div className="sidebar">
-     <h2> Sidebar </h2>
+     <h2> {this.props.username} </h2>
      </div>
     )
   }
