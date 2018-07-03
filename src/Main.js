@@ -16,7 +16,10 @@ class Main extends Component {
         <div className="main" >
           <Header />
           <div className="mainContainer">
-            <Sidebar username={this.props.username}/>
+            <Sidebar 
+            username={this.props.username}
+            signOut={this.props.signOut}
+            />
             <Body />
           </div>
         </div>

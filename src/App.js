@@ -7,15 +7,22 @@ import SignIn from './SignIn'
 
 class App extends Component {
   state = {
-    user: {
-      uid: null,
-      username: null,
-    },
+     user: {},
   }
 
   signIn = (user) => {
-    this.setState({user: user})
+    this.setState({user})
   }
+
+  signOut = () => {
+    this.setState(prevState => ({
+      user: {
+          ...prevState.user,
+          username: null
+      }
+  }))
+  }
+
 
   isSignedIn = () => {
     return this.state.user.username
@@ -27,7 +34,10 @@ class App extends Component {
     return (
       <div className="App" >
       {
-        this.isSignedIn() ? <Main username={this.state.user.username}/> : <SignIn signIn={this.signIn}/>
+        this.isSignedIn() ? <Main 
+        username={this.state.user.username}
+        signOut={this.signOut}
+        /> : <SignIn signIn={this.signIn}/>
       }
       </div>
     )

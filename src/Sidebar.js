@@ -7,6 +7,9 @@ class Sidebar extends Component {
     return (
      <div className="sidebar">
      <h2> {this.props.username} </h2>
+     <button onClick={() => this.props.signOut()}> 
+     <p> Sign Out </p>
+     </button>
      </div>
     )
   }

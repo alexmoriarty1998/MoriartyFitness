@@ -14,10 +14,9 @@ class SignIn extends Component {
     handleSubmit = (event) => {
         event.preventDefault()
         this.props.signIn({
-            uid: '123214',
+            userId: '123214',
             username: this.state.username,
         })
-        console.log(this.state.username)
     }
 
     render(){
