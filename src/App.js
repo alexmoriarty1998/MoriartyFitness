@@ -10,8 +10,15 @@ class App extends Component {
      user: {},
   }
 
+  componentWillMount() {
+    const user = JSON.parse(localStorage.getItem('user'))
+
+    if(user) this.setState({user})
+  }
+
   signIn = (user) => {
     this.setState({user})
+    localStorage.setItem('user', JSON.stringify(user))
   }
 
   signOut = () => {
@@ -21,6 +28,7 @@ class App extends Component {
           username: null
       }
   }))
+  localStorage.removeItem('user')
   }
 
 
