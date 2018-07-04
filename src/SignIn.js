@@ -1,6 +1,6 @@
 import React, {Component } from 'react'
 
-import './SignIn.css'
+
 
 class SignIn extends Component {
     state={
@@ -21,7 +21,8 @@ class SignIn extends Component {
 
     render(){
         return(
-            <div className="signIn">
+            <div className="signIn" >
+            <h1 style={styles.heading}> Welcome to Moriarty Fitness </h1>
             <form 
             onSubmit={this.handleSubmit}
             style={styles.form}
@@ -44,7 +45,7 @@ const styles={
     form:{
         display: 'flex',
         flexDirection:'column',
-        width: '40rem',
+        height: '60vh',
         backgroundColor: 'white',
         boxShadow: '0 1px 1px rgba(0,0,0,.1)',
         marginBottom: '2rem',
@@ -54,12 +55,18 @@ const styles={
     },
 
     input: {
+        
         fontSize: '1.5rem',
-        marginTop: '2rem',
-        marginBottom: '2rem',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        marginTop: '1rem',
+        marginBottom: '1rem',
         textAlign: 'center',
         color: '#1c110e',
-        border: '2px solid #1c110e ',
+        border: 0,
+        borderBottom: '1.5px solid #1c110e ',
+        width: '30rem',
+        padding: '0.5rem',
         ':focus': {
           outline: 0,
         },
@@ -76,6 +83,18 @@ const styles={
     color: 'white',
     width: '20rem',
     cursor: 'pointer',
+  },
+
+  heading: {
+      display: 'block',
+      backgroundColor: '#1c110e',
+      borderRadius: '1rem',
+      color: 'white',
+      width: '35rem',
+      padding: '2rem',
+      textAlign: 'center',
+      marginLeft: 'auto',
+      marginRight: 'auto',
   },
 
 }
