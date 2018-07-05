@@ -5,10 +5,13 @@
   "homepage": "https://alexmoriarty1998.github.io/MoriartyFitness/",
   "dependencies": {
     "aphrodite": "^2.2.2",
+    "re-base": "^3.2.3",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-rebase": "^1.0.5",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "rebase": "^0.3.0"
   },
   "scripts": {
     "predeploy": "npm run build",

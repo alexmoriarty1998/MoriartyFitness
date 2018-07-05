@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { StyleSheet, css} from 'aphrodite'
 
+
 class MyStatsForm extends Component{
     
   state = {
@@ -9,7 +10,7 @@ class MyStatsForm extends Component{
 
   handleSubmit = (event) => {
     event.preventDefault()
-    console.log(this.state.body)
+    this.props.addStat(this.state.body)
     this.setState({ body: '' })
   }
 
@@ -19,6 +20,7 @@ class MyStatsForm extends Component{
 
   render() {
     return (
+      <div>
       <form
         onSubmit={this.handleSubmit}
         className={css(styles.form)}
@@ -33,6 +35,7 @@ class MyStatsForm extends Component{
         />
         <button type="submit" className={css(styles.button)}>Send</button>
       </form>
+      </div>
     )
   }
 }

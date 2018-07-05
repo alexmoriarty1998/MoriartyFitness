@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import { Route, Switch, NavLink } from 'react-router-dom'
 
-import MyStatsForm from './MyStatsForm'
+import MyStats from './MyStats'
 
 class MyStatsPage extends Component {
     render(){
@@ -13,7 +13,7 @@ class MyStatsPage extends Component {
                 </NavLink>
             </h2>
             <Switch>
-                <Route path="/mystatspage/mystatsform" render={() => <h1><MyStatsForm /></h1>} />
+                <Route path="/mystatspage/mystatsform" render={() => <h1><MyStats /></h1>} />
                 <Route render={() => <p> what... </p>} />
             </Switch>
             </div>
