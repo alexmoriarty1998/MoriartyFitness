@@ -4,21 +4,23 @@
   }
   
   .navLinks a {
-    color: #1c110e;
+    color: rgb(245, 245, 245);
     text-decoration: none;
-    font-size: 25px;
+    font-size: 30px;
+    border-radius: .2rem;
+    background-color: #1c110e;
   }
   
   .navLinks a.active {
-    color: #F79824;
+    color: rgb(245, 245, 245);
   }
   
   .navLinks a.active:hover {
-    color: #FDCA40;
+    color: #3a2d29;
   }
   
   .navLinks a:hover {
-    color: #1c110e;
+    color: #3a2d29;
   }
   
   .nutritionLinks {
@@ -27,7 +29,7 @@
     font-size: 15px;
   }
 
-  .navLinks{
-      color: #1c110e;
-  }
+ 
+
+
 

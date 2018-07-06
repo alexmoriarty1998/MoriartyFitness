@@ -11,7 +11,7 @@ class Stats extends Component {
         return(
             <div className="subheader">
         <ul className="navLinks">
-          <li>
+          <li id='test'>
             <NavLink
             to='/nutrition'>
 

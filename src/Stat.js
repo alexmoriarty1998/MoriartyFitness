@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Stat = ({stat}) => {
+const Stat = (props) => {
     return(
         <div className="stat">
-        {stat.body}
+        <p>{props.stat.liftType}: {props.stat.max}</p>
         </div>
     )
 }
