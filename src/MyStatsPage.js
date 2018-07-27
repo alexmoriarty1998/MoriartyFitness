@@ -38,19 +38,8 @@ class MyStatsPage extends Component {
     render(){
         return (
             <div className="mystatspage">
-            
-                <NavLink to="/mystatspage/mystatsform">
-                Enter a new stat here
-                </NavLink>
-                <br/>
-                <NavLink to="/mystatspage/currentstats">
-                Current Stats 
-                </NavLink>
-            
-            <Switch>
-                <Route path="/mystatspage/mystatsform" render={() => <h1><MyStatsForm addStat={this.addStat} /></h1>} />
-                <Route path="/mystatspage/currentstats" render={() => <h1><StatList stats={this.state.stats} /></h1>}/>
-            </Switch>
+            <StatList id="statlistcomponent"stats={this.state.stats}
+                addStat={this.addStat} />
             </div>
         )
     }
